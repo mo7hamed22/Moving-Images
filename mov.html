@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MovePic</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .box {
+            width: 400px;
+            padding: 10px;
+            height: 400px;
+            background: #000;
+            position: relative;
+
+        }
+
+        #img1 {
+            position: absolute;
+            top: 150px;
+            left: 0px;
+        }
+
+        #img2 {
+            position: absolute;
+            top: 170px;
+            right: 0px;
+        }
+
+        #img3 {
+            position: absolute;
+            left: 150px;
+            bottom: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="box" class="box">
+        <img src="icon1.gif" id="img1" left="0px">
+        <img src="icon2.gif" id="img2">
+        <img src="TOP.JPG" id="img3" style="vertical-align:bottom">
+    </div>
+    <div id="box2">
+        <button value="go" id="go" onclick="go(this.value)">go</button>
+        <input type="button" value="rest" onclick="rest()">
+        <input type="button" value="Stop" onclick="stop()">
+    </div>
+
+
+    <script src="move.js"></script>
+
+
+
+</body>
+
+</html>
